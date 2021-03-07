@@ -2,6 +2,7 @@
 import subprocess
 import re
 import os
+import sys
 import shutil
 
 
@@ -67,7 +68,7 @@ def build_package(package_name, sources, headers):
         shutil.copy(header, package_header_dir)
 
 
-package_name = "STM32L0"
+package_name = sys.argv[1]
 
 make_lines = get_make_output(f"{package_name}.Makefile").splitlines()
 
