@@ -31,8 +31,8 @@ build_flags =
   -Wl,--defsym=__process_stack_size__=0x400 # For the main() thread
   -Wl,--defsym=__main_stack_size__=0x200 # For ISRs
 
-lib_deps =
-  [tbd package URL]/ChibiPIO-STM32L0.zip
+# For L0:
+lib_deps = ChibiPIO-STM32L0
 
 build_type = debug
 extra_scripts =
