@@ -55,7 +55,7 @@ env.Append(
 
 Some simplifications were made to get this up and running:
 - ChibiOS/RT and ChibiOS/HAL are packaged together
-- Only GCC is supported (could be expanded, combinatorics though...)
+- Only GCC was considered
 - Only Cortex-M was considered
 - ARM/Thumb interwork was not considered
 
